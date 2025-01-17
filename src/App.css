@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-image: url('https://preview.redd.it/gta-6-key-art-wallpaper-v0-3p5rpgnc1p3c1.png?auto=webp&s=23abf568205ae45d4cd7a815ed84d0f84ba32f29');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-bar button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.nav-bar button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-bar button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.release-info, .description, .trailer, .gallery-info, .gallery {
+  margin-bottom: 30px;
+}
+
+.release-info h2, .description h2, .trailer h2, .gallery-info h2, .gallery h2 {
+  color: #111;
+  text-align: center;
+}
+.release-info p{
+text-align:center; 
+}
+iframe {
+  max-width: 100%;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
+
+.gallery {
+  display: flex; /* Layout em linha */
+  gap: 20px; /* Espaçamento entre as imagens */
+  padding: 20px; /* Espaçamento interno */
+  overflow-x: auto; /* Habilita rolagem horizontal */
+  scroll-behavior: smooth; /* Suaviza a rolagem */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery::-webkit-scrollbar {
+  height: 8px; /* Altura da barra de rolagem */
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.gallery img {
+  width: 80vw; /* Largura ajustada para ocupar grande parte da tela */
+  max-width: 1000px; /* Limite máximo de largura */
+  height: auto; /* Mantém a proporção */
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para efeito ao passar o mouse */
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Leve aumento no tamanho */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+
+.image-grid {
+  display: flex;
+  gap: 20px; /* Espaçamento entre as imagens */
+  padding: 20px;
+  overflow-x: scroll; /* Habilita a rolagem horizontal */
+  scroll-snap-type: x mandatory; /* Suaviza a rolagem para cada imagem */
+}
+
+.image-grid img {
+  width: 100%; /* Ajusta a largura da imagem para ocupar o espaço disponível */
+  max-width: 600px; /* Define um limite de largura */
+  height: auto; /* Mantém a proporção da imagem */
+  scroll-snap-align: start; /* Alinha cada imagem no início da área visível */
+}
+
+.image-grid img:hover {
+  transform: scale(1.05); /* Efeito de zoom suave */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-info p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Barra de navegação */
+.nav-bar {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  background-color: #333; 
+  padding: 10px 0;
+  border-bottom: 2px solid #555;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #ff8800; 
+}
+
+.nav-bar a.active {
+  color: #ff8800; 
+  border-bottom: 2px solid #ff8800;
+}
+.lore-image {
+width: 50%;
+height:auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+padding: 20px 0;
+ }
